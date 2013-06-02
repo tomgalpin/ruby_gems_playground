@@ -1,0 +1,11 @@
+<div id="other_container" class="cf">
+  <form action="/images" method="get">
+    <input type="text" name="input_image">
+    <button>Return</button>
+  </form>
+
+  <%  if !params["input_image"].nil? %>
+  <img src='<%= @image %>'/>
+  <%  end %>
+</div>
+

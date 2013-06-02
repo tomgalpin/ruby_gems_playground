@@ -1,0 +1,14 @@
+<div id="movie_container" class="cf">
+
+  <form action="/movies" method="get">
+    <input type="text" name="input_title">
+    <button>Return</button>
+  </form>
+
+  <%  if !params["input_title"].nil? %>
+    <p><%= @results.title %></p>
+    <p><%= @results.plot %></p>
+
+  <%  end %>
+
+</div>

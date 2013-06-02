@@ -1,0 +1,12 @@
+<div id="other_container" class="cf">
+
+  <form action="/stocks" method="get">
+    <input type="text" name="input_stock">
+    <button>Return</button>
+  </form>
+
+  <%  if !params["input_stock"].nil? %>
+  <p><%= "$" + @stock.last.to_s %></p>
+  <%  end %>
+
+</div>
