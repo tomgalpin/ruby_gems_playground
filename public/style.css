@@ -39,8 +39,6 @@ html {
   width: 1000px;
   margin: 0 auto;
   border-radius: 5px;
-/*  opacity: 0.70;*/
-
 }
 
 .cf:before,
@@ -83,35 +81,63 @@ h2 {
   margin-bottom: 20px;
 }
 
-.stocks {
-  padding: 20px;
-  display:inline-block;
-
-}
-
-#button .stocks {
-  float: right;
-}
-
-#container-stocks  {
-  background: rgba(0, 0, 0, 0.59);
-  width: 1000px;
-  margin: 0 auto;
-  border-radius: 5px;
-  height: 500px;
-}
-
 #other_container {
   background: rgba(0, 0, 0, 0.59);
   width: 1000px;
   height: 300px;
   margin: 0 auto;
   border-radius: 5px;
+  text-align: center;
 }
 
-#other_container p {
+#stocks  {
   color: white;
-  text-align: justify;
-  padding: 20px;
+  text-align: center;
   font-family: Helvetica;
+  font-size: 20px;
+
+  margin: 0px 10px 5px 0;
 }
+
+form {
+  padding: 20px;
+  margin: 10px 0 0 10px;
+}
+
+#movie_container {
+  background: rgba(0, 0, 0, 0.59);
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+}
+#movie_container p {
+  color: white;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 20px;
+  text-decoration: none;
+  margin: -5px 0 -5px 0;
+}
+#movie_container li {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+#image_container {
+  background: rgba(0, 0, 0, 0.59);
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+}
+#image_container img {
+  display: inline;
+  margin: 0 5px 20px 0;
+
+  max-width:90%;
+}
+

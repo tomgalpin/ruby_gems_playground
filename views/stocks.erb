@@ -6,7 +6,13 @@
   </form>
 
   <%  if !params["input_stock"].nil? %>
-  <p><%= "$" + @stock.last.to_s %></p>
+  <p id="stocks"><%= @stock.symbol.to_s %></p>
+  <p id="stocks"><%= @stock.company.to_s %></p>
+  <p id="stocks"><%= @stock.exchange.to_s %></p>
+  <p id="stocks"><%= "Trade Timestamp:  " + @stock.trade_timestamp.to_s %></p>
+  <p id="stocks"><%= "Last:  $" + @stock.last.to_s %></p>
+  <p id="stocks"><%= "High:  $" + @stock.high.to_s %></p>
+  <p id="stocks"><%= "Low:  $" + @stock.low.to_s %></p>
   <%  end %>
 
 </div>

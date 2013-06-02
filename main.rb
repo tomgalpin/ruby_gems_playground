@@ -64,13 +64,9 @@ get "/images" do
   if params["input_image"].nil?
     erb :images
   else
-    begin
     suckr = ImageSuckr::GoogleSuckr.new
     @image = suckr.get_image_url({"q" => params[:input_image]})
-    rescue "This is an error"
-      erb :images
-    end
-
+    erb :images
   end
 end
 

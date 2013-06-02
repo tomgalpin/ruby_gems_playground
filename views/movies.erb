@@ -6,8 +6,13 @@
   </form>
 
   <%  if !params["input_title"].nil? %>
-    <p><%= @results.title %></p>
-    <p><%= @results.plot %></p>
+    <p id="movies"><%= @results.title %></p>
+      <li>
+        <ul><%= "Plot:  " + @results.plot.to_s %></ul>
+        <ul><%= "Year:  " + @results.released.to_s %></ul>
+        <ul><%= "Director:  " + @results.director.to_s %></ul>
+        <ul><%= "Actors:  " + @results.actors.join(",  ") %></ul>
+      </li>
 
   <%  end %>
 
